@@ -1,0 +1,9 @@
+en:
+  errors:
+    base: try again later
+    events:
+      not_found: event not found
+    users:
+      not_found: user not found
+      sign_in:
+        base: bad login details

@@ -1,0 +1,36 @@
+{
+  "name": "hiclock_client",
+  "version": "0.2.1",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "formsy-react": "^1.1.5",
+    "formsy-semantic-ui-react": "^0.3.4",
+    "jwt-decode": "^2.2.0",
+    "moment": "^2.24.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.4",
+    "react-datepicker": "^2.2.0",
+    "react-dom": "^16.8.4",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "2.1.8",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.86.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
