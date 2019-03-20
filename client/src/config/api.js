@@ -10,7 +10,6 @@ axios.defaults.headers.common['Content-Type'] = 'application/json;charset=UTF-8'
 axios.defaults.headers.common = {'Authorization': `Bearer ${getValidToken()}`}
 
 export function setHeaders(token) {
-    console.log(token)
     if (token) {
         axios.defaults.headers.common['Authorization'] = `Bearer ${token}`
     }

@@ -4,7 +4,6 @@ class Users::SignUpCommand < BaseCommand
 
   def validate(params)
     form = Users::SignUpForm.call(params)
-
     if form.success?
       Success(form.to_h)
     else
@@ -15,7 +14,7 @@ class Users::SignUpCommand < BaseCommand
   def persist(attributes)
     user = User.new(attributes)
 
-    if user.save!
+    if user.save
       Success(user)
     else
       Failure(user.errors.messages)
