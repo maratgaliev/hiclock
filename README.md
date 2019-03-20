@@ -1,24 +1,14 @@
-# README
+[![Build Status](https://travis-ci.org/maratgaliev/hiclock.svg?branch=master)](https://travis-ci.org/maratgaliev/hiclock)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# HiClock
 
-Things you may want to cover:
+API part for the HiClock - Rails 5 API time control application 
 
-* Ruby version
+## Setup
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+$ git clone git@github.com:maratgaliev/hiclock.git
+$ cd hiclock
+$ bundle install
+$ rails s
+```
