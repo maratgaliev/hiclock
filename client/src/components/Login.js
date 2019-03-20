@@ -21,7 +21,7 @@ class Login extends Component {
         }
         if (this.state.signUp) {
             //data.user.password_confirmation = elements.passwordConfirmation.value
-            return signUp(data)
+            return signUp(user_data)
                 .then((res) => this.props.onSignInResponse(res))
         }
         else {
@@ -66,7 +66,7 @@ class Login extends Component {
                             <Form.Input
                                 required
                                 type="password"
-                                name="passwordConfirmation"
+                                name="password_confirmation"
                                 label="Your password"
                             />
                         </Form.Field>
