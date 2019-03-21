@@ -12,4 +12,6 @@ Rails.application.routes.draw do
       resources :events, only: [:index, :create, :show, :update, :destroy]
     end
   end
+
+  get '/docs' => redirect('/swagger/dist/index.html?url=/apidocs/api-docs.json')
 end

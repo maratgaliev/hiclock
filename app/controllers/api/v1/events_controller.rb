@@ -4,27 +4,23 @@ class Api::V1::EventsController < BaseController
   swagger_api :index do
     summary 'Get all the events'
     notes 'Should be used for fetching all events'
-    response :unauthorized
     response :ok, "Success"
   end
   swagger_api :create do
     summary 'Creating event'
     notes 'Should be used for creating events'
-    param :form, 'event[title]', :string, :required, 'title'
-    param :form, 'event[description]', :text, :required, 'description'
+    param :form, 'event[start_time]', :datetime, :required, 'start_time'
   end
   swagger_api :show do
     summary 'Get event'
     notes 'Should be used for fetching a event'
     param :path, :id, :string, :id
-    response :unauthorized
     response :ok, "Success"
   end
   swagger_api :destroy do
     summary 'Destroy event'
     notes 'Should be used for destroying a event'
     param :path, :id, :string, :id
-    response :unauthorized
     response :ok, "Success"
   end
 
