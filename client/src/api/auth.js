@@ -14,10 +14,7 @@ export function signIn(data) {
             return getDecodedToken()
         })
         .catch((error) => {
-            if (/ 401/.test(error.message)) {
-                error = new Error('The email/password combination was incorrect')
-            }
-            throw error
+            alert('The email/password combination was incorrect')
         })
 }
 
@@ -27,6 +24,9 @@ export function signUp(data) {
         .then((res) => {
             rememberToken(extractToken(res))
             return getDecodedToken()
+        })
+        .catch((error) => {
+            alert('Please check your entered data')
         })
 }
 

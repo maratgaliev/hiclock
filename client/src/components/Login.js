@@ -20,7 +20,6 @@ class Login extends Component {
             user: data
         }
         if (this.state.signUp) {
-            //data.user.password_confirmation = elements.passwordConfirmation.value
             return signUp(user_data)
                 .then((res) => this.props.onSignInResponse(res))
         }
