@@ -34,9 +34,11 @@ class EventRow extends Component {
                         }
                     </Table.Cell>
                     <Table.Cell>
+                        {moment(this.props.event.stop_time).isValid() &&
                         <Button basic color='red' type="button" onClick={() => onDeleteClick(this.props.event.id)}>
                             D
                         </Button>
+                        }
                     </Table.Cell>
                 </Table.Row>
             </>
