@@ -27,8 +27,11 @@ class EventRow extends Component {
                     <Table.Cell>
                         <Link className='ui green basic button' to={`/events/${this.props.event.id}`}>R</Link>
                     </Table.Cell>
+
                     <Table.Cell>
-                        <Link className='ui brown basic button' to={`/events/${this.props.event.id}/edit`}>U</Link>
+                        {moment(this.props.event.stop_time).isValid() &&
+                        < Link className='ui brown basic button' to={`/events/${this.props.event.id}/edit`}>U</Link>
+                        }
                     </Table.Cell>
                     <Table.Cell>
                         <Button basic color='red' type="button" onClick={() => onDeleteClick(this.props.event.id)}>
