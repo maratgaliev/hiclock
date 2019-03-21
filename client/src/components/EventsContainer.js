@@ -41,8 +41,7 @@ class EventsContainer extends Component {
     componentDidMount() {
         axios.all([this.getEvents()])
             .then(axios.spread((events) => {
-                this.setState({ events: events.data })
-                this.setState({ loading: false })
+                this.setState({ events: events.data, loading: false })
             }));
     }
 

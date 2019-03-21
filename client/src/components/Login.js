@@ -15,7 +15,7 @@ class Login extends Component {
         this.onValidSubmit = this.onValidSubmit.bind(this)
     }
 
-    onValidSubmit = (data) => {
+    onValidSubmit(data) {
         const user_data = {
             user: data
         }
@@ -30,7 +30,7 @@ class Login extends Component {
 
     }
 
-    onClick = () => {
+    onClick() {
         this.setState({ signUp: !this.state.signUp })
     }
 

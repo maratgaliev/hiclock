@@ -23,8 +23,7 @@ class EventShow extends Component {
     componentDidMount() {
         axios.all([this.getEvent()])
             .then(axios.spread((event) => {
-                this.setState({ event: event.data })
-                this.setState({ loading: false })
+                this.setState({ event: event.data,loading: false })
             }));
     }
 

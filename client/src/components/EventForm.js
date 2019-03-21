@@ -27,8 +27,7 @@ class EventForm extends Component {
     }
 
     componentWillReceiveProps({ event }) {
-        this.setState({ event });
-        this.setState({startTime: moment(event.start_time).toDate(), stopTime: moment(event.stop_time).toDate()})
+        this.setState({ event, startTime: moment(event.start_time).toDate(), stopTime: moment(event.stop_time).toDate()})
     }
 
     onValidSubmit(data) {
