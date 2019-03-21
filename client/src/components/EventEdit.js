@@ -28,9 +28,7 @@ class EventEdit extends Component {
     render() {
         const { event, loading } = this.state;
         return (
-            <>
-                <EventForm event={event} loading={loading}/>
-            </>
+            <EventForm event={event} loading={loading}/>
         );
     }
 }
